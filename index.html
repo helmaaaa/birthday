@@ -327,22 +327,22 @@
             }
         }
 
-        // Mendapatkan elemen audio
-        var audio = document.getElementById('bg-music');
+        // // Mendapatkan elemen audio
+        // var audio = document.getElementById('bg-music');
 
-        // Ambil posisi terakhir dari LocalStorage saat halaman dimuat
-        window.onload = function() {
-            var savedTime = localStorage.getItem('audioTime');
-            if (savedTime !== null) {
-                audio.currentTime = savedTime;
-            }
-            audio.play();
-        };
+        // // Ambil posisi terakhir dari LocalStorage saat halaman dimuat
+        // window.onload = function() {
+        //     var savedTime = localStorage.getItem('audioTime');
+        //     if (savedTime !== null) {
+        //         audio.currentTime = savedTime;
+        //     }
+        //     audio.play();
+        // };
 
-        // Simpan posisi waktu audio sebelum halaman di-refresh
-        window.onbeforeunload = function() {
-            localStorage.setItem('audioTime', audio.currentTime);
-        };
+        // // Simpan posisi waktu audio sebelum halaman di-refresh
+        // window.onbeforeunload = function() {
+        //     localStorage.setItem('audioTime', audio.currentTime);
+        // };
     </script>
 
 </body>
